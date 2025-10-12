@@ -4,10 +4,10 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="flex justify-between items-center px-8 py-4 w-full">
-      <p>Fullstack Web Developer</p>
+    <div className="flex justify-between items-center px-8 py-6 w-full font-mono text-accent text-[min(3vw,15px)] font-medium">
+      <p className="">Fullstack Web Developer</p>
       <nav>
-        <span className="flex space-x-6">
+        <span className="flex space-x-2">
           <p id="Skills" className="cursor-pointer">
             Skills
           </p>

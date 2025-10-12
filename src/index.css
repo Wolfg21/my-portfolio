@@ -1,7 +1,12 @@
 @import "tailwindcss";
+@import "@fontsource/roboto-mono/400.css";
+@import "@fontsource/roboto-mono/500.css";
+@import "@fontsource/roboto-mono/700.css";
 
 @theme {
   --color-cream: #e8e8e3;
   --color-accent: #6b645c;
   --color-darker-accent: #080807;
+
+  --font-mono: "Roboto Mono", monospace;
 }
