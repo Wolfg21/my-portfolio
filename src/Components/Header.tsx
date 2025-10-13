@@ -4,12 +4,12 @@ const Header = () => {
   const NAV_ITEMS = ["Skills", "Projects", "About", "Contact"];
 
   return (
-    <header className="flex md:flex-row justify-between items-start md:items-center px-8 py-6 w-full font-mono text-accent text-[min(3vw,16px)] font-medium">
+    <header className="flex md:flex-row justify-between items-start md:items-center px-[min(5vw,32px)] tracking-[-0.04em] py-6 w-full font-mono text-accent text-[min(3vw,18px)] font-medium">
       <h1 className="font-medium text-wrap w-32 md:text-nowrap">
         Fullstack Web Developer
       </h1>
 
-      <nav aria-label="Main navigation" className="mt-4 md:mt-0">
+      <nav aria-label="Main navigation" className="mt-0">
         <ul className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0">
           {NAV_ITEMS.map((item) => (
             <li key={item}>
