@@ -10,7 +10,7 @@ const Header = () => {
       </h1>
 
       <nav aria-label="Main navigation" className="mt-0">
-        <ul className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0">
+        <ul className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 select-none">
           {NAV_ITEMS.map((item) => (
             <li key={item}>
               <a

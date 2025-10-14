@@ -5,48 +5,37 @@ const Hero = () => {
   const lastName = "Smolinsky";
 
   return (
-    <section className="relative w-full">
+    <section className="relative w-full h-screen overflow-x-hidden">
       <div
         className="
-          sticky top-0 flex flex-col lg:flex-row justify-center pt-20
-          h-screen w-full z-0
-          font-mono uppercase font-semibold leading-[0.8]
-          text-[clamp(2.8rem,20vw,20rem)]
-          tracking-[-0.04em] text-darker-accent/90
+          sticky top-0 pt-20 flex flex-col justify-start
+          h-full font-mono font-semibold uppercase leading-[0.8]
+          text-[clamp(2.8rem,14vw,16rem)] tracking-[-0.04em]
+          text-darker-accent/90 select-none
+          px-[min(5vw,2rem)]
         "
       >
-        {/* Wrap each line for mobile / stacked layout */}
-        <div className="flex flex-row lg:gap-x-[0.1em] overflow-hidden wrap">
+        {/* Names grid */}
+        <div className="inline-grid auto-rows-auto overflow-hidden">
           {/* First name */}
-          <div className="overflow-ellipsis flex">
+          <div className="grid grid-flow-col auto-cols-[1ch]">
             {firstName.split("").map((char, i) => (
-              <span
-                key={`first-${i}`}
-                className="inline-block opacity-100 translate-y-0"
-              >
+              <span key={`first-${i}`} className="inline-block">
                 {char}
               </span>
             ))}
           </div>
 
-          {/* Space between names on mobile */}
-          <div className="hidden lg:block w-[0.25em]" />
-
-          {/* Last name */}
-          <div className="overflow-hidden flex">
+          {/* Last name, indented by one grid cell */}
+          <div className="grid grid-flow-col auto-cols-[1ch] translate-x-[1ch]">
             {lastName.split("").map((char, i) => (
-              <span
-                key={`last-${i}`}
-                className="inline-block opacity-100 translate-y-0"
-              >
+              <span key={`last-${i}`} className="inline-block">
                 {char}
               </span>
             ))}
           </div>
         </div>
       </div>
-
-      <div className="relative z-10">{/* next section */}</div>
     </section>
   );
 };
