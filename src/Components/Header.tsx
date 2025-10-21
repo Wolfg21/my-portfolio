@@ -4,22 +4,22 @@ const Header = () => {
   const NAV_ITEMS = ["Skills", "Projects", "About", "Contact"];
 
   return (
-    <header className="flex md:flex-row justify-between items-start md:items-center px-[min(5vw,32px)] tracking-[-0.04em] py-6 w-full font-mono text-accent text-[min(3vw,18px)] font-medium">
-      <h1 className="font-medium text-wrap w-32 md:text-nowrap">
-        Fullstack Web Developer
-      </h1>
+    <header className="flex flex-col gap-6 py-6 font-mono text-accent md:flex-row md:items-start md:justify-between">
+      <div className="flex flex-col gap-1 uppercase tracking-[0.32em] text-xs font-medium text-accent md:text-sm md:tracking-[0.38em]">
+        <span>Fullstack Web Developer</span>
+      </div>
 
-      <nav aria-label="Main navigation" className="mt-0">
-        <ul className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0 select-none">
+      <nav aria-label="Main navigation">
+        <ul className="flex flex-col items-start gap-3 text-sm uppercase tracking-[0.32em] md:flex-row md:items-center md:gap-5 md:text-[0.95rem] md:tracking-[0.34em]">
           {NAV_ITEMS.map((item) => (
-            <li key={item}>
+            <li key={item} className="select-none">
               <a
                 href={`#${item}`}
-                className="group relative block overflow-hidden h-[1.2em] font-medium cursor-pointer select-none leading-[1em]"
+                className="group relative block overflow-hidden h-[1.2em] leading-[1.2em]"
               >
                 <span
                   className="
-                    block w-full leading-[1.2em]
+                    block w-full
                     transition-transform duration-[0.4s]
                     ease-[cubic-bezier(.51,.92,.24,1.15)]
                     translate-y-0 group-hover:-translate-y-full
@@ -31,7 +31,7 @@ const Header = () => {
                 <span
                   aria-hidden="true"
                   className="
-                    absolute top-full left-0 w-full block leading-[1.2em]
+                    absolute top-full left-0 w-full
                     transition-transform duration-[0.4s]
                     ease-[cubic-bezier(.51,.92,.24,1.15)]
                     translate-y-0 group-hover:-translate-y-[100%]

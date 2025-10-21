@@ -10,3 +10,10 @@
 
   --font-mono: "Roboto Mono", monospace;
 }
+
+
+@layer base {
+  :root {
+    --mx: min(5vw, 32px);
+  }
+}
