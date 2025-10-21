@@ -60,7 +60,10 @@ const Hero = () => {
 
         <div className="flex flex-col items-start gap-10 md:items-end md:gap-14">
           <div className="flex items-center gap-3 text-accent md:gap-4">
-            <span aria-hidden="true" className="flex h-6 w-6 items-center justify-center text-accent/70 md:h-8 md:w-8">
+            <span
+              aria-hidden="true"
+              className="flex h-6 w-6 items-center justify-center text-accent/70 md:h-8 md:w-8"
+            >
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -85,7 +88,7 @@ const Hero = () => {
           <div className="ml-auto flex flex-col items-end font-mono uppercase tracking-[0.3em] text-darker-accent/70 md:tracking-[0.4em]">
             <span className="text-xs md:text-sm">Based in</span>
             <span className="text-2xl font-semibold text-darker-accent md:text-5xl">
-              Vienna
+              Austria
             </span>
           </div>
         </div>
