@@ -119,7 +119,7 @@ const Projects = () => (
               </p>
               <ul className="space-y-3 font-mono text-sm uppercase tracking-[0.26em] text-cream/70">
                 <li>tRPC + Drizzle</li>
-                <li>Playwright coverage >= 95%</li>
+                <li>{"Playwright coverage >= 95%"}</li>
                 <li>Shared component library</li>
               </ul>
             </div>

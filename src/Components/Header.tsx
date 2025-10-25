@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
-
->>>>>>> cd0ce92db37b9ae13cb41a80b23671ba4d3ae374
 const Header = () => {
   const NAV_ITEMS = ["Skills", "Projects", "About", "Contact"];
 
